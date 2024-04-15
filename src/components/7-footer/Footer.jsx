@@ -1,12 +1,12 @@
 import React from 'react';
-import './contact.scss'
+import './footer.scss';
 
-function Contact() {
+function Footer() {
   return (
     <div className='style'>
-      Contact
+      Footer
     </div>
   )
 }
 
-export default Contact
+export default Footer

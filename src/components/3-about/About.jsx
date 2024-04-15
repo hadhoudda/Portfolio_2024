@@ -1,8 +1,12 @@
 import React from 'react';
-import './about.css'
+import './about.scss'
 
-export default function About() {
+function About() {
   return (
-    <div>About</div>
+    <div className='style'>
+      About
+    </div>
   )
 }
+
+export default About

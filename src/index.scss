@@ -1,0 +1,51 @@
+// Variables :
+//----colors----//
+$primary__color: #1d1c1c;
+$secondary__color:#303030;
+$border__color:#414141;
+//-----font ----//
+$font__body:'Noto Serif','Courier New', Courier, monospace, sans-serif;
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-family:$font__body;
+}
+/* .light{
+  --primary_color:#f5f6f0;
+} */
+
+body {
+  background-color: $primary__color;
+  color:white ;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.flex{
+  display: flex;
+}
+
+.container{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $secondary__color;
+  border:  1px solid $border__color;
+}
+
+.style{
+  border-bottom: 1px solid $border__color;
+  padding: 2rem 0;
+}

@@ -1,8 +1,12 @@
 import React from 'react';
-import './project.css'
+import './project.scss'
 
-export default function Project() {
+function Project() {
   return (
-    <div>P</div>
+    <div className='style'>
+      Project
+    </div>
   )
 }
+
+export default Project
