@@ -1,9 +1,25 @@
+@use "../../assets/styles/mixins-variables" ;
+
 header{
-    gap: 2rem;
+    justify-content: space-between;
+    margin: 0 2rem;
+    
+    //gap: 2rem;
     nav{
-        
+        padding: 1rem 2rem;
+        background-color: mixins-variables.$primary--header--color;
+        border-radius: 30px;
         ul{
             gap: 2rem;
+            li{
+                a{
+                    color: mixins-variables.$primary--title--color ;
+                }
+            }
         }
     }
+    button{
+        border-radius: 50px;
+    }
+    
 }

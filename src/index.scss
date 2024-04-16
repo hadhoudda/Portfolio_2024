@@ -1,11 +1,4 @@
-// Variables :
-//----colors----//
-$primary__color: #1d1c1c;
-$secondary__color:#303030;
-$border__color:#414141;
-//-----font ----//
-$font__body:'Noto Serif','Courier New', Courier, monospace, sans-serif;
-
+@use "./assets/styles/mixins-variables" ;
 
 *{
   box-sizing: border-box;
@@ -13,15 +6,13 @@ $font__body:'Noto Serif','Courier New', Courier, monospace, sans-serif;
   padding: 0;
 }
 
-html{
-  font-family:$font__body;
-}
 /* .light{
   --primary_color:#f5f6f0;
 } */
 
 body {
-  background-color: $primary__color;
+  font-family:mixins-variables.$font--body;
+  background-color: mixins-variables.$primary--body--color;
   color:white ;
 }
 
@@ -35,17 +26,19 @@ a{
 
 .flex{
   display: flex;
+  align-items: center;
 }
 
 .container{
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: $secondary__color;
-  border:  1px solid $border__color;
+  margin: 0 auto;
+  // margin-left: auto;
+  // margin-right: auto;
+  background-color: mixins-variables.$secondary--body--color;
+  border:  1px solid mixins-variables.$border--body--color;
 }
 
 .style{
-  border-bottom: 1px solid $border__color;
-  padding: 2rem 0;
+  border-bottom: 1px solid mixins-variables.$border--body--color;
+  padding: 1rem;
 }

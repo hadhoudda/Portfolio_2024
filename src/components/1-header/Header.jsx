@@ -1,16 +1,17 @@
-import React from 'react';
-import './header.scss'
+import { Link } from 'react-router-dom';
+import './header.scss';
 
 function Header() {
   return (
     <header className='style flex'>
+      {/* <Link to='/Portfolio'><img className ="logo-profil" src={logo} alt='image__houda' /></Link> */}
       <nav>
         <ul className='flex'>
-          <li><a href=" "></a>Accueil</li>
-          <li><a href=""></a>À propos</li>
-          <li><a href=""></a>Compétences</li>
-          <li><a href=""></a>Projets</li>
-          <li><a href=""></a>Contact</li>
+          <li><a href=" ">Accueil</a></li>
+          <li><a href="">À propos</a></li>
+          <li><a href="">Compétences</a></li>
+          <li><a href="">Projets</a></li>
+          <li><a href="">Contact</a></li>
         </ul>
       </nav>
       <button>
