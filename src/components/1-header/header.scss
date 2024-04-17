@@ -1,25 +1,54 @@
-@use "../../assets/styles/mixins-variables" ;
+@use "../../styles/mixins-variables" ;
 
 header{
     justify-content: space-between;
     margin: 0 2rem;
-    
-    //gap: 2rem;
+    .logo{
+        width: 40px;
+    }
     nav{
         padding: 1rem 2rem;
         background-color: mixins-variables.$primary--header--color;
         border-radius: 30px;
+        box-shadow: 1px 1px 2px blue;
         ul{
             gap: 2rem;
             li{
                 a{
                     color: mixins-variables.$primary--title--color ;
+                    opacity: 0.8;
+                    font-size: 0.85rem;
+                    font-weight: 700;
+                    cursor: pointer;
+                    &:hover{
+                        opacity: 1;
+                        color: mixins-variables.$primary--hover--color;
+                    }
+                }
+                &:hover{
+                    transition: 0.3s;
+                    scale: 1.25;
                 }
             }
         }
     }
     button{
-        border-radius: 50px;
+        border-radius: 50px ;
+        border: 1px solid mixins-variables.$primary--body--color;
+        width: 35px;
+        height: 35px;
+        background-color: mixins-variables.$primary--body--color;
+        &:hover{
+            box-shadow: 1px 1px 4px #FCD53F;
+        }
+        .icone-moon{
+            color: #FCD53F;
+            font-size: 120%;
+            &:hover{
+                scale: 1.15;
+            }
+            
+        }
     }
     
 }

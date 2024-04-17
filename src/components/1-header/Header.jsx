@@ -1,21 +1,21 @@
-import { Link } from 'react-router-dom';
 import './header.scss';
 
 function Header() {
   return (
     <header className='style flex'>
-      {/* <Link to='/Portfolio'><img className ="logo-profil" src={logo} alt='image__houda' /></Link> */}
+      <a href="#"><img className ="logo" src="./src/images/logo.png" alt='image__houda' /></a>
       <nav>
         <ul className='flex'>
-          <li><a href=" ">Accueil</a></li>
-          <li><a href="">À propos</a></li>
-          <li><a href="">Compétences</a></li>
-          <li><a href="">Projets</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Compétences</a></li>
+          <li><a href="#">Projets</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
       <button>
-        j
+        <i className="fa-solid fa-sun icone-moon"></i>
+      {/* <i className="fa-regular fa-moon icone-moon"></i> */}
       </button>
     </header>
   )
