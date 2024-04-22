@@ -1,0 +1,12 @@
+@use "./mixins-variables" ;
+
+//functions
+
+@function bg-color($color){
+    @if(lightness($color)>70 ){
+        @return mixins-variables.$secondary--title--color;
+    } @else {
+        @return mixins-variables.$primary--title--color;
+    }
+    
+}

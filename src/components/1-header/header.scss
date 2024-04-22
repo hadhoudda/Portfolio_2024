@@ -1,4 +1,5 @@
 @use "../../styles/mixins-variables" ;
+@use "../../styles/functions" ;
 
 header{
     justify-content: space-between;
@@ -6,35 +7,41 @@ header{
     .logo{
         width: 40px;
     }
-    nav{
+    .btn-menu,
+    .modal{
+        display: none;
+    }
+    
+    .nav-desktop{
         padding: 1rem 2rem;
         background-color: mixins-variables.$primary--header--color;
         border-radius: 30px;
-        box-shadow: 1px 1px 2px blue;
-        ul{
-            gap: 2rem;
-            li{
-                a{
-                    color: mixins-variables.$primary--title--color ;
-                    opacity: 0.8;
-                    font-size: 0.85rem;
-                    font-weight: 700;
-                    cursor: pointer;
-                    &:hover{
-                        opacity: 1;
-                        color: mixins-variables.$primary--hover--color;
-                    }
-                }
+        box-shadow: 1px 1px 2px mixins-variables.$primary--hover--color;
+        
+    }
+
+    ul{
+        gap: 2rem;
+        li{
+            a{
+                color: mixins-variables.$primary--title--color ;
+                opacity: 0.8;
+                font-size: 0.85rem;
+                font-weight: 700;
+                cursor: pointer;
                 &:hover{
-                    transition: 0.3s;
-                    scale: 1.25;
+                    opacity: 1;
+                    color: mixins-variables.$primary--hover--color;
                 }
+            }
+            &:hover{
+                transition: 0.3s;
+                scale: 1.25;
             }
         }
     }
-    button{
+    .btn-mode{
         border-radius: 50px ;
-        border: 1px solid mixins-variables.$primary--body--color;
         width: 35px;
         height: 35px;
         background-color: mixins-variables.$primary--body--color;
@@ -51,4 +58,45 @@ header{
         }
     }
     
+}
+
+@media screen and (max-width: 767px){
+    header{
+        .link-logo{
+            display: none;
+        }
+           
+        .nav-mobil{
+            display: block;
+            position: fixed;
+            inset: 0;
+            z-index: 3;
+            background-color: rgba(66, 59, 59, 0.843);
+
+            .modal{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 80%;
+                height: 75vh;
+                margin-top: 2rem;
+                padding: 3rem;
+                background-color: mixins-variables.$primary--nav--color;
+                border-radius: 0 22px 22px 0;
+            }
+        
+        }
+        ul{
+            li{
+                a{
+                    font-size: 1.5rem ;
+                }
+                &:hover{
+                    transition: 0.3s;
+                    scale: 1.05;
+                }
+            }
+        }
+        
+    }
 }
