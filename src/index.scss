@@ -14,6 +14,8 @@ body {
   font-family:mixins-variables.$font--body;
   background-color: mixins-variables.$primary--body--color;
   color:white ;
+  max-width: 1990px;
+  min-width: 320px;
 }
 
 li{
