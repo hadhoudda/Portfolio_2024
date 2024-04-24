@@ -48,7 +48,7 @@ function Header() {
           <ul className="modal">
             <li>
                <button onClick={() => { setToggleMenu(false)}}>
-               <i className="fa-solid fa-xmark btn-menu "></i>
+               <i className="fa-solid fa-xmark btn-menu" id="btn-close"></i>
                </button>
               
             </li>
