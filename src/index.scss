@@ -28,7 +28,13 @@ a{
 }
 
 button{
-  border: none;
+  all:unset;
+  &:hover{
+    cursor: pointer;
+  }
+  &:active{
+    scale: 0.9;
+  }
 }
 
 .flex{

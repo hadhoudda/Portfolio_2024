@@ -3,15 +3,15 @@ import "./header.scss";
 
 function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
-
+  
   return (
     <header className="style flex">
       <a className="link-logo" href="#">
         <img className="logo" src="./src/images/logo.png" alt="image__houda" />
       </a>
       <button className="btn-mode">
-        <i className="fa-solid fa-sun icone-moon"></i>
-        {/* <i className="fa-regular fa-moon icone-moon"></i> */}
+        {/* <i className="fa-regular fa-sun icone-sun flex"></i> */}
+        <i className="fa-regular fa-moon icone-moon flex "></i>
       </button>
       <nav>
         <div className="nav-desktop">
@@ -48,7 +48,7 @@ function Header() {
           <ul className="modal">
             <li>
                <button onClick={() => { setToggleMenu(false)}}>
-               <i className="fa-solid fa-xmark btn-menu" id="btn-close"></i>
+               <i className="fa-solid fa-xmark btn-menu "></i>
                </button>
               
             </li>
