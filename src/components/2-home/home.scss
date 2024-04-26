@@ -6,7 +6,7 @@ table of contents
 ==========================
 1-left section
 2-right section
-3-responsivi
+3-responsive
 =========================*/
 
 /*======================== 
@@ -14,7 +14,7 @@ table of contents
 =========================*/
 section {
   height: 90vh;
-/*======================== 
+  /*======================== 
 1-left section
 =========================*/
   .section-left {
@@ -40,43 +40,41 @@ section {
       }
     }
 
-    p{
+    p {
       font-size: 3rem;
       margin-bottom: 1.3rem;
       color: mixins-variables.$primary--title--color;
-      opacity: 0.6;
-      span{
-      font-weight: 900;
-      color: rgb(238, 234, 5);    
+      span {
+        font-weight: 900;
+        color: rgba(238, 234, 5, 0.691);
+      }
     }
-    }
-   
-    button:hover {
-      transition: 0.3s;
-      scale: 1.2;
-    }
+
     .link-social {
       gap: 1.5rem;
       margin: 2rem 2rem 2rem 0;
-
       i {
+        color: mixins-variables.$primary--link--social--color;
         font-size: 150%;
-      }
-      .icone-github,
-      .icone-email {
-        color: white;
-      }
-      .icone-linkedin {
-        color: mixins-variables.$blue;
-      }
-      .icone-whatsapp {
-        color: rgba(7, 208, 7, 0.811);
+        &:hover {
+          cursor: pointer;
+          color: mixins-variables.$hover--link--social--color;
+          transition: 0.3s;
+          scale: 1.2;
+        }
       }
     }
     .btn-cv {
-      background-color: rgb(107, 106, 105);
+      background-color: rgba(55, 79, 239, 0.845);
       border-radius: 20px;
       align-items: center;
+      margin-top: 3rem;
+      &:hover {
+        cursor: pointer;
+        transition: 0.3s;
+        scale: 1.1;
+        box-shadow: 1px 1px 30px rgb(100, 113, 228);
+      }
       a {
         font-size: 0.6rem;
         font-weight: 700;
@@ -86,6 +84,29 @@ section {
     }
   }
   /*======================== 
-1-right section
+2-right section
 =========================*/
+}
+
+/*======================== 
+3-responsive
+=========================*/
+@media screen and (max-width: 777px) {
+  section {
+    .section-left {
+      .image-profil {
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+      p {
+        font-size: 2rem;
+        margin-bottom: 1.3rem;
+        span {
+          font-weight: 500;
+        }
+      }
+    }
+  }
 }

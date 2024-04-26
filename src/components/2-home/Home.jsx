@@ -12,26 +12,18 @@ function Home() {
         <p>Développeuse full-stack Web & Mobile </p>
 
         <div className="link-social flex">
-          <button>
             <a href="mailto:ahhouda@yahoo.fr">
-              <i className="fa-regular fa-envelope icone-email"></i>
+              <i className="fa-regular fa-envelope "></i>
             </a>
-          </button>
-          <button>
             <a href="https://www.linkedin.com/in/houda-ben-abdallah-developpeuse-web/">
-              <i className="fa-brands fa-linkedin icone-linkedin"></i>
+              <i className="fa-brands fa-linkedin"></i>
             </a>
-          </button>
-          <button>
             <a href="https://github.com/hadhoudda">
-              <i className="fa-brands fa-github icone-github"></i>
+              <i className="fa-brands fa-github "></i>
             </a>
-          </button>
-          <button>
             <a href="https://wa.me/+33622464454">
-              <i className="fa-brands fa-whatsapp icone-whatsapp"></i>
+              <i className="fa-brands fa-whatsapp "></i>
             </a>
-          </button>
         </div>
         <button className="btn-cv flex">
           <a href="./cv.pdf" download>

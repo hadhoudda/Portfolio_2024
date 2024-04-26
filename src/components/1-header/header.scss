@@ -34,7 +34,6 @@ header {
     li {
       a {
         color: mixins-variables.$primary--title--color;
-        opacity: 0.8;
         font-size: 0.85rem;
         font-weight: 700;
         cursor: pointer;
@@ -77,6 +76,9 @@ header {
     }
     .btn-menu {
       display: block;
+      &:hover{
+        cursor: pointer;
+      }
     }
     .nav-mobil {
       display: block;

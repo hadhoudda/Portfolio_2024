@@ -1,11 +1,10 @@
-import React from 'react';
 import './footer.scss';
 
 function Footer() {
   return (
-    <div className='style'>
-      Footer
-    </div>
+    <footer>
+      <p>© 2024 Houda BEN ABDALLAH || Tous droits réservés.</p>
+    </footer>
   )
 }
 
