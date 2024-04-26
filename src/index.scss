@@ -1,4 +1,4 @@
-@use "./assets/styles/mixins-variables" ;
+@use "./styles/mixins-variables" ;
 
 *{
   box-sizing: border-box;
@@ -6,9 +6,6 @@
   padding: 0;
 }
 
-/* .light{
-  --primary_color:#f5f6f0;
-} */
 
 body {
   font-family:mixins-variables.$font--body;
@@ -45,11 +42,19 @@ button{
 .container{
   width: 90%;
   margin: 0 auto;
+  padding: 0 1.8rem;
   background-color: mixins-variables.$secondary--body--color;
   border:  1px solid mixins-variables.$border--body--color;
 }
 
 .style{
-  border-bottom: 1px solid mixins-variables.$border--body--color;
   padding: 1rem;
+}
+
+
+@media screen and (max-width: 767px) {
+  .container{
+    width: 96%;
+    padding: 0 0.8rem;
+  }
 }

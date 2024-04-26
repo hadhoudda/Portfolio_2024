@@ -1,12 +1,47 @@
-import React from 'react'
-import './home.scss'
+import "./home.scss";
 
 function Home() {
   return (
-    <div className='style'>
-      Home
-    </div>
-  )
+    <section className="style ">
+      <div className="section-left">
+        <div className="image-profil flex">
+          <img src="../src/images/mon-photo.webp" alt="photo profil de houda" />
+          <i className="fa-solid fa-check icone-verified"></i>
+        </div>
+        <p>Hi, I&rsquo; Am <span id="name">HOUDA</span></p>
+        <p>Développeuse full-stack Web & Mobile </p>
+
+        <div className="link-social flex">
+          <button>
+            <a href="mailto:ahhouda@yahoo.fr">
+              <i className="fa-regular fa-envelope icone-email"></i>
+            </a>
+          </button>
+          <button>
+            <a href="https://www.linkedin.com/in/houda-ben-abdallah-developpeuse-web/">
+              <i className="fa-brands fa-linkedin icone-linkedin"></i>
+            </a>
+          </button>
+          <button>
+            <a href="https://github.com/hadhoudda">
+              <i className="fa-brands fa-github icone-github"></i>
+            </a>
+          </button>
+          <button>
+            <a href="https://wa.me/+33622464454">
+              <i className="fa-brands fa-whatsapp icone-whatsapp"></i>
+            </a>
+          </button>
+        </div>
+        <button className="btn-cv flex">
+          <a href="./cv.pdf" download>
+            Télécharger mon CV
+          </a>
+        </button>
+      </div>
+      <div className="section-right flex"></div>
+    </section>
+  );
 }
 
-export default Home
+export default Home;

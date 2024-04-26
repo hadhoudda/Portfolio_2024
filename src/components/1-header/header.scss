@@ -4,6 +4,8 @@
 header {
   justify-content: space-between;
   margin: 0 2rem;
+  background-color: mixins-variables.$primary--header--color;
+  border-radius: 22px;
   .logo {
     width: 40px;
   }
@@ -91,13 +93,13 @@ header {
         margin-top: 1rem;
         padding: 2rem;
         background-color: mixins-variables.$primary--nav--color;
-        animation: slidein 0.9s 1;
+        animation: slidein 0.7s 1;
         li:first-child {
           text-align: right;
           i{
             &:hover{
               transition: 0.3s;
-            rotate: 180deg;
+              rotate: 180deg;
           }
           }
           

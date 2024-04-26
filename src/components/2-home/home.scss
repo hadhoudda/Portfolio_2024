@@ -1,0 +1,91 @@
+@use "../../styles/mixins-variables";
+@use "../../styles/functions";
+
+/*======================== 
+table of contents
+==========================
+1-left section
+2-right section
+3-responsivi
+=========================*/
+
+/*======================== 
+1- section
+=========================*/
+section {
+  height: 90vh;
+/*======================== 
+1-left section
+=========================*/
+  .section-left {
+    flex-grow: 1;
+    padding-left: 2rem;
+    color: rgba(255, 255, 255, 0.799);
+    flex-direction: column;
+    .image-profil {
+      align-items: end;
+      padding: 2rem 0;
+      img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 2px solid rgb(194, 188, 205);
+      }
+      .icone-verified {
+        font-size: 80%;
+        border-radius: 50%;
+        padding: 0.2rem;
+        background-color: mixins-variables.$blue;
+        margin-bottom: 0.3rem;
+      }
+    }
+
+    p{
+      font-size: 3rem;
+      margin-bottom: 1.3rem;
+      color: mixins-variables.$primary--title--color;
+      opacity: 0.6;
+      span{
+      font-weight: 900;
+      color: rgb(238, 234, 5);    
+    }
+    }
+   
+    button:hover {
+      transition: 0.3s;
+      scale: 1.2;
+    }
+    .link-social {
+      gap: 1.5rem;
+      margin: 2rem 2rem 2rem 0;
+
+      i {
+        font-size: 150%;
+      }
+      .icone-github,
+      .icone-email {
+        color: white;
+      }
+      .icone-linkedin {
+        color: mixins-variables.$blue;
+      }
+      .icone-whatsapp {
+        color: rgba(7, 208, 7, 0.811);
+      }
+    }
+    .btn-cv {
+      background-color: rgb(107, 106, 105);
+      border-radius: 20px;
+      align-items: center;
+      a {
+        font-size: 0.6rem;
+        font-weight: 700;
+        padding: 0.5rem 1rem;
+        color: white;
+      }
+    }
+  }
+  /*======================== 
+1-right section
+=========================*/
+}

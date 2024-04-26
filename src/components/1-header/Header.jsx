@@ -20,7 +20,7 @@ function Header() {
               <a href="#">Accueil</a>
             </li>
             <li>
-              <a href="#">À propos</a>
+              <a href="#">Profil</a>
             </li>
             <li>
               <a href="#">Compétences</a>
@@ -40,7 +40,7 @@ function Header() {
           setToggleMenu(true);
         }}
       >
-        <i  className={setToggleMenu ? "fa-solid fa-bars btn-menu": "div-none"}></i>
+        <i  className="fa-solid fa-bars btn-menu"></i>
       </div>
 
       {toggleMenu && (
