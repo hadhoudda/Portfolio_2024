@@ -2,7 +2,7 @@ import "./home.scss";
 
 function Home() {
   return (
-    <section className="style ">
+    <section className="style " id="home">
       <div className="section-left">
         <div className="image-profil flex">
           <img src="../src/images/mon-photo.webp" alt="photo profil de houda" />

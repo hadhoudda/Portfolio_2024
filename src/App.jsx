@@ -10,11 +10,14 @@ function App() {
   return (
     <div className="container" >
       <Header/>
-      <Home/>
-      <About/>
-      <Skills/>
-      <Project/>
-      <Contact/>
+      <main>
+        <Home/>
+        <About/>
+        <Skills/>
+        <Project/>
+        <Contact/>
+      </main>
+      
       <Footer/>
      
     </div>

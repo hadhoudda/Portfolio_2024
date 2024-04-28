@@ -1,14 +1,24 @@
 @use "../../styles/mixins-variables";
 @use "../../styles/functions";
 
+/*======================== 
+table of contents
+==========================
+1-header
+2-nav desktop
+3-responsive
+4-nav mobil
+5-animation
+=========================*/
+
+
+/*======================== 
+1-header
+=========================*/
 header {
-  justify-content: space-between;
-  margin: 0 2rem;
+  justify-content:space-between;
   background-color: mixins-variables.$primary--header--color;
   border-radius: 22px;
-  .logo {
-    width: 40px;
-  }
   .btn-menu,
   .nav-mobil {
     display: none;
@@ -17,8 +27,10 @@ header {
     font-size: 160%;
     color:  mixins-variables.$primary--title--color;
   }
+  /*======================== 
+  2-nav desktop
+  =========================*/
   .nav-desktop {
-    padding: 1rem 2rem;
     ul {
       li {
         &:hover {
@@ -67,7 +79,9 @@ header {
     }
   }
 }
-
+/*======================== 
+3-responsive
+=========================*/
 @media screen and (max-width: 767px) {
   header {
     .link-logo,
@@ -80,13 +94,15 @@ header {
         cursor: pointer;
       }
     }
+    /*======================== 
+    4-nav mobil
+    =========================*/
     .nav-mobil {
       display: block;
       position: fixed;
       inset: 0;
       z-index: 3;
       background-color: rgba(66, 59, 59, 0.843);
-
       .modal {
         display: flex;
         flex-direction: column;
@@ -119,6 +135,9 @@ header {
       }
     }
   }
+  /*======================== 
+  5-animation
+  =========================*/
   @keyframes slidein {
     from {
       margin-left: 100%;

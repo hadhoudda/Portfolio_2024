@@ -19,7 +19,7 @@ section {
 =========================*/
   .section-left {
     flex-grow: 1;
-    padding-left: 2rem;
+    //padding-left: 2rem;
     color: rgba(255, 255, 255, 0.799);
     flex-direction: column;
     .image-profil {
@@ -103,9 +103,6 @@ section {
       p {
         font-size: 2rem;
         margin-bottom: 1.3rem;
-        span {
-          font-weight: 500;
-        }
       }
     }
   }

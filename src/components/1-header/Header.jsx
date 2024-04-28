@@ -6,9 +6,6 @@ function Header() {
   
   return (
     <header className="style flex">
-      <a className="link-logo" href="#">
-        <img className="logo" src="./src/images/logo.png" alt="image__houda" />
-      </a>
       <button className="btn-mode">
         {/* <i className="fa-regular fa-sun icone-sun flex"></i> */}
         <i className="fa-regular fa-moon icone-moon flex "></i>
@@ -17,7 +14,7 @@ function Header() {
         <div className="nav-desktop">
           <ul className="flex">
             <li>
-              <a href="#">Accueil</a>
+              <a href="#home">Accueil</a>
             </li>
             <li>
               <a href="#">Profil</a>
@@ -53,19 +50,19 @@ function Header() {
               
             </li>
             <li>
-              <a href="#">Accueil</a>
+              <a onClick={() => { setToggleMenu(false)}} href="#home">Accueil</a>
             </li>
             <li>
-              <a href="#">À propos</a>
+              <a onClick={() => { setToggleMenu(false)}} href="#">À propos</a>
             </li>
             <li>
-              <a href="#">Compétences</a>
+              <a onClick={() => { setToggleMenu(false)}} href="#">Compétences</a>
             </li>
             <li>
-              <a href="#">Projets</a>
+              <a onClick={() => { setToggleMenu(false)}} href="#">Projets</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a onClick={() => { setToggleMenu(false)}} href="#">Contact</a>
             </li>
           </ul>
         </div>
