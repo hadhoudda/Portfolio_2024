@@ -1,6 +1,6 @@
 import Header from "./components/1-header/Header";
 import Home from "./components/2-home/Home";
-import About from "./components/3-about/About";
+import About from "./components/3-profil/Profil";
 import Skills from "./components/4-skills/Skills";
 import Project from "./components/5-projects/Project";
 import Contact from "./components/6-contact/Contact";
@@ -17,7 +17,6 @@ function App() {
         <Project/>
         <Contact/>
       </main>
-      
       <Footer/>
      
     </div>

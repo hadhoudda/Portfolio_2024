@@ -17,16 +17,16 @@ function Header() {
               <a href="#home">Accueil</a>
             </li>
             <li>
-              <a href="#">Profil</a>
+              <a href="#profil">Profil</a>
             </li>
             <li>
-              <a href="#">Compétences</a>
+              <a href="#skills">Compétences</a>
             </li>
             <li>
-              <a href="#">Projets</a>
+              <a href="#projects">Projets</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -53,16 +53,16 @@ function Header() {
               <a onClick={() => { setToggleMenu(false)}} href="#home">Accueil</a>
             </li>
             <li>
-              <a onClick={() => { setToggleMenu(false)}} href="#">À propos</a>
+              <a onClick={() => { setToggleMenu(false)}} href="#profil">À propos</a>
             </li>
             <li>
-              <a onClick={() => { setToggleMenu(false)}} href="#">Compétences</a>
+              <a onClick={() => { setToggleMenu(false)}} href="#skills">Compétences</a>
             </li>
             <li>
-              <a onClick={() => { setToggleMenu(false)}} href="#">Projets</a>
+              <a onClick={() => { setToggleMenu(false)}} href="#projects">Projets</a>
             </li>
             <li>
-              <a onClick={() => { setToggleMenu(false)}} href="#">Contact</a>
+              <a onClick={() => { setToggleMenu(false)}} href="#contact">Contact</a>
             </li>
           </ul>
         </div>

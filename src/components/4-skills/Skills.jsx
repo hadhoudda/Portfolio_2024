@@ -3,9 +3,9 @@ import './skills.scss'
 
 function Skills() {
   return (
-    <div className='style'>
+    <section id='skills' className='style'>
       Skills
-    </div>
+    </section>
   )
 }
 

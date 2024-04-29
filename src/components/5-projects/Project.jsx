@@ -1,19 +1,28 @@
+
 import './project.scss'
-// import data from '../../data/data.json';
-// import Cards from './Cards';
+import data from '../../data/data.json';
+import Card from './Card';
 
 function Project() {
   return (
-    <section className='style'>
-      <div className="filter">
-        <button>Tous les Projets</button>
-        <button>Javascript/framwork</button>
-        <button>Java/Framwork</button>
+    <section className='section-projects style' id='projects'>
+      <div className="filter flex">
+        <button className='active'>Tous les Projets</button>
+        <button>Projets Formations </button>
+        <button>Projets Personnels</button>
       </div>
+    <article className="projects flex">
+      {
+        data && 
+        data.length >0 &&
+        data.map((card)=>
+          { console.log(card?.title)
+            return (<Card project={card} key={card?.id} />);})
+      }
+    </article>
 
-      <div className="projects">
       
-      </div>
+      
     </section>
   )
 }

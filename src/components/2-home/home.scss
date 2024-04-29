@@ -12,7 +12,7 @@ table of contents
 /*======================== 
 1- section
 =========================*/
-section {
+.home {
   height: 90vh;
   /*======================== 
 1-left section
@@ -46,7 +46,7 @@ section {
       color: mixins-variables.$primary--title--color;
       span {
         font-weight: 900;
-        color: rgba(238, 234, 5, 0.691);
+        color: mixins-variables.$primary--hover--color;
       }
     }
 
@@ -65,7 +65,7 @@ section {
       }
     }
     .btn-cv {
-      background-color: rgba(55, 79, 239, 0.845);
+      background-color: darken(mixins-variables.$primary--btn--filter--color,2%);
       border-radius: 20px;
       align-items: center;
       margin-top: 3rem;
@@ -73,7 +73,7 @@ section {
         cursor: pointer;
         transition: 0.3s;
         scale: 1.1;
-        box-shadow: 1px 1px 30px rgb(100, 113, 228);
+        box-shadow: 1px 1px 10px mixins-variables.$primary--box--shadow--color;
       }
       a {
         font-size: 0.6rem;
@@ -92,7 +92,8 @@ section {
 3-responsive
 =========================*/
 @media screen and (max-width: 777px) {
-  section {
+  .home {
+    height: auto;
     .section-left {
       .image-profil {
         img {

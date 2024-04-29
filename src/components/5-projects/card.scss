@@ -1,0 +1,105 @@
+@use "../../styles/mixins-variables";
+@use "../../styles/functions";
+
+/*======================== 
+table of contents
+==========================
+1-figure
+2-figcaption
+3-links 
+4-responsive
+=========================*/
+
+/*======================== 
+1-figure
+=========================*/
+figure {
+  display: flex;
+  flex-direction: column;
+  border: 1px mixins-variables.$primary--btn--filter--color solid;
+  border-radius: 5px;
+  width: 27%;
+  height: 350px;
+  align-items: start;
+  margin: 0 auto;
+  background-image: linear-gradient(mixins-variables.$secondary--title--color,mixins-variables.$primary--header--color);
+  &:hover{
+    transition: 0.3s;
+    border: 1px lighten(mixins-variables.$primary--btn--filter--color,30%) solid;
+    rotate: 1deg;
+    scale: 1.01;
+  }
+  img {
+    width: 100%;
+    height: 60%;
+    border-radius: 5px 5px 0 0;
+  }
+  /*======================== 
+2-figcaption
+=========================*/
+  figcaption {
+    padding: 0.5rem;
+    h2 {
+      color: lighten(mixins-variables.$primary--title--color, 30%);
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    .description-project {
+      color: mixins-variables.$primary--title--color;
+      font-size: 0.8rem;
+      padding: 0.5rem 0;
+    }
+    /*======================== 
+3-links 
+=========================*/
+    .links {
+      gap: 85%;
+      .icon-link {
+        gap: 0.5rem;
+
+        a {
+          color: darken(mixins-variables.$primary--title--color, 30%);
+          &:hover {
+            color: lighten(mixins-variables.$primary--title--color, 70%);
+            transition: 0.3s;
+            scale: 0.9;
+            cursor: pointer;
+          }
+        }
+      }
+      .info {
+        font-size: 0.8rem;
+        gap: 0.3rem;
+        color: mixins-variables.$primary--hover--color;
+
+        &:hover {
+          color: darken(mixins-variables.$primary--hover--color, 10%);
+          transition: 0.3s;
+          scale: 0.9;
+          cursor: pointer;
+        }
+        i{
+            padding-top: 0.2rem;
+        }
+      }
+    }
+  }
+}
+
+/*======================== 
+4-responsive
+=========================*/
+@media screen and (max-width: 767px) {
+  figure {
+    width: 45%;
+    height: 250px;
+    align-items: start;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  figure {
+    width: 88%;
+    height: 250px;
+  }
+}
