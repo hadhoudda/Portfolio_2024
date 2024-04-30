@@ -1,26 +1,29 @@
 import "./card.scss";
-
+// import Tag from './Tag'
 
 function Card({project}) {
   return (
     <figure className="card ">
-      <img src="../src/images/mon-photo.webp" alt="" />
+      <img src={project?.picture} alt={"l'image de la projet" + project?.title} />
       <figcaption>
         <h2>{project?.title}</h2>
-        <div className="description-project ">{project?.tags}</div>
+        {/* <div className="description-project flex">
+                {project?.tags?.map((tag, index) => {
+                    return <Tag value={tag} key={index} />;
+                })}
+        </div> */}
 
-        <div className="links flex">
+        <div className="links-project">
           <div className="icon-link flex">
             <a href={project?.link}>
               <i className="fa-solid fa-link"></i>
             </a>
-            <a href="">
+            <a href={project?.titleLink}>
               <i className="fa-brands fa-github"></i>
             </a>
           </div>
-
           <a href="" className="flex info">
-            Plus <i className="fa-solid fa-arrow-right"></i>
+            Plus info <i className="fa-solid fa-arrow-right"></i>
           </a>
           {/* <i className="fa-solid fa-circle-info"></i> */}
         </div>

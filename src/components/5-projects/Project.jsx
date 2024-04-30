@@ -16,8 +16,9 @@ function Project() {
         data && 
         data.length >0 &&
         data.map((card)=>
-          { console.log(card?.title)
-            return (<Card project={card} key={card?.id} />);})
+          { 
+            return (<Card project={card} key={card?.id} />);
+          })
       }
     </article>
 

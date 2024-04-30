@@ -6,8 +6,9 @@ table of contents
 ==========================
 1-figure
 2-figcaption
-3-links 
-4-responsive
+3-links-project 
+4-responsive 767px
+5-responsive 468px
 =========================*/
 
 /*======================== 
@@ -19,7 +20,7 @@ figure {
   border: 1px mixins-variables.$primary--btn--filter--color solid;
   border-radius: 5px;
   width: 27%;
-  height: 350px;
+  height: 250px;
   align-items: start;
   margin: 0 auto;
   background-image: linear-gradient(mixins-variables.$secondary--title--color,mixins-variables.$primary--header--color);
@@ -31,29 +32,29 @@ figure {
   }
   img {
     width: 100%;
-    height: 60%;
+    height: 65%;
+    object-fit: fill;
     border-radius: 5px 5px 0 0;
+    filter: brightness(60%);
   }
   /*======================== 
 2-figcaption
 =========================*/
   figcaption {
+    width: 100%;
     padding: 0.5rem;
     h2 {
       color: lighten(mixins-variables.$primary--title--color, 30%);
       font-size: 1.5rem;
       font-weight: 700;
-    }
-    .description-project {
-      color: mixins-variables.$primary--title--color;
-      font-size: 0.8rem;
-      padding: 0.5rem 0;
+      margin-bottom: 1.5rem;
     }
     /*======================== 
-3-links 
+3-links-project
 =========================*/
-    .links {
-      gap: 85%;
+    .links-project {
+      display: flex;
+      justify-content: space-between;
       .icon-link {
         gap: 0.5rem;
 
@@ -87,19 +88,37 @@ figure {
 }
 
 /*======================== 
-4-responsive
+4-responsive 767px
 =========================*/
 @media screen and (max-width: 767px) {
   figure {
     width: 45%;
     height: 250px;
     align-items: start;
+    figcaption {
+      h2 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 1.4rem;
+      }
+    }
   }
+  
 }
 
+/*======================== 
+5-responsive 468px
+=========================*/
 @media screen and (max-width: 468px) {
   figure {
     width: 88%;
-    height: 250px;
+    height: 220px;
+  figcaption {
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 1.2rem;
+    }
   }
+}
 }
