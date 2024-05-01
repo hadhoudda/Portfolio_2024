@@ -7,10 +7,17 @@ table of contents
 1-figure
 2-figcaption
 3-links-project 
+4-modal
 4-responsive 767px
 5-responsive 468px
 =========================*/
 
+.no-show-modal {
+  display: none;
+}
+.show-modal {
+  display: block;
+}
 /*======================== 
 1-figure
 =========================*/
@@ -23,10 +30,14 @@ figure {
   height: 250px;
   align-items: start;
   margin: 0 auto;
-  background-image: linear-gradient(mixins-variables.$secondary--title--color,mixins-variables.$primary--header--color);
-  &:hover{
+  background-image: linear-gradient(
+    mixins-variables.$secondary--title--color,
+    mixins-variables.$primary--header--color
+  );
+  &:hover {
     transition: 0.3s;
-    border: 1px lighten(mixins-variables.$primary--btn--filter--color,30%) solid;
+    border: 1px lighten(mixins-variables.$primary--btn--filter--color, 30%)
+      solid;
     rotate: 1deg;
     scale: 1.01;
   }
@@ -79,14 +90,75 @@ figure {
           scale: 0.9;
           cursor: pointer;
         }
-        i{
-            padding-top: 0.2rem;
+        i {
+          padding-top: 0.2rem;
         }
       }
     }
   }
 }
 
+/*======================== 
+4-modal
+=========================*/
+.show-modal {
+  .modal {
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    width: 60%;
+    height: 250px;
+    min-width: 320px;
+    z-index: 11;
+    color:lighten(mixins-variables.$primary--title--color,20%);
+    border-radius: 15px;
+    background-color: darken(mixins-variables.$primary--header--color, 10%);
+    backdrop-filter: blur(12px);
+    .close-modal {
+      justify-content: end;
+      width: 97%;
+      font-size: 1.4rem;
+      padding-top: 0.6rem ;
+      color: mixins-variables.$secondary--nav--color;
+      &:hover{
+        scale: unset;
+      }
+    }
+    .description-project{
+      .title-modal{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 0.6rem;
+        color:lighten( mixins-variables.$secondary--nav--color,20%);
+      }
+      .body-modal{
+        padding: 1rem;
+        font-size: 0.8rem;
+        text-align: justify;
+      }
+      .footer-modal{
+        justify-content: center;
+        gap: 0.5rem;
+      }
+    }
+  }
+}
+
+/*======================== 
+4-responsive 1044px
+=========================*/
+@media screen and (max-width: 1044px) {
+  figure {
+    figcaption {
+      h2 {
+        font-size: 1.08rem;
+        font-weight: 600;
+        margin-bottom: 1.3rem;
+      }
+    }
+  }
+}
 /*======================== 
 4-responsive 767px
 =========================*/
@@ -98,12 +170,29 @@ figure {
     figcaption {
       h2 {
         font-size: 1.1rem;
-        font-weight: 600;
         margin-bottom: 1.4rem;
       }
     }
   }
-  
+  .show-modal {
+    .modal {
+      width: 75%;
+      height: 280px;
+      .close-modal {
+        font-size: 1.3rem;
+      }
+      .description-project{
+        .title-modal{
+          font-size: 1.4rem;
+          margin-bottom: 0.3rem;
+        }
+        .body-modal{
+          padding: 0.9rem;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
 }
 
 /*======================== 
@@ -113,12 +202,19 @@ figure {
   figure {
     width: 88%;
     height: 220px;
-  figcaption {
-    h2 {
-      font-size: 1.2rem;
-      font-weight: 700;
-      margin-bottom: 1.2rem;
+    figcaption {
+      h2 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 1.2rem;
+      }
     }
   }
-}
+  .show-modal {
+    .modal {
+      width: 80%;
+      height: 310px;
+     
+    }
+  }
 }

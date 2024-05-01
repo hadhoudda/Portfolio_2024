@@ -3,6 +3,7 @@ import './project.scss'
 import data from '../../data/data.json';
 import Card from './Card';
 
+
 function Project() {
   return (
     <section className='section-projects style' id='projects'>
@@ -17,7 +18,9 @@ function Project() {
         data.length >0 &&
         data.map((card)=>
           { 
-            return (<Card project={card} key={card?.id} />);
+            return (
+            <Card project={card} key={card?.id} />
+            )
           })
       }
     </article>
