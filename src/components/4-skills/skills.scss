@@ -1,0 +1,26 @@
+@use "../../styles/mixins-variables";
+@use "../../styles/functions";
+
+
+
+
+.section-skills{
+    flex-direction: column;
+    justify-content: center;
+   .title-techno,
+   .title-outils{
+    display: inline;
+        border-bottom: 2px solid mixins-variables.$primary--btn--filter--color;
+        
+   }
+    .skills-technos,
+    .skills-outils{
+        font-size: 3.5rem;
+        gap: 3rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+  

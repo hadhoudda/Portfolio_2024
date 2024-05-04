@@ -5,7 +5,7 @@ function Contact() {
   return (
     <section className="section-contact style flex" id="contact">
       <div className="form flex">
-        <h2 className="title-contat">Contactez-moi</h2>
+        <h2 className="title">Contactez-moi</h2>
         <p className="text-contat">
           N'hésitez pas à me contacter, je vous répondrai dans 24h.
         </p>

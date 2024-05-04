@@ -3,11 +3,11 @@ import './profil.scss'
 function Profil() {
   return (
     <section id='profil' className='style section-profil '>
-         <h2 className="title-profil">
+         <h2 className="title">
       À propos de moi
       </h2>
       <div className="container-profil flex">
-      <img className='img-profil' src="./src/images/pro3.jpg" alt="image houda de profil" />
+      <img className='img-profil' src="./src/images/pro3.jpg" alt="image houda de profil"/>
       <p className="text-profil">
       Hello 😊! Je m’appelle Houda, développeuse fullstack, Javascript, React, Node.Js, passionnée par le développement front-end et back-end,
        assoiffée de nouvelles connaissances, d'apprendre de nouvelles techniques curieuse, autonome et ayant l'esprit d’équipe..

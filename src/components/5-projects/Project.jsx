@@ -6,7 +6,10 @@ import Card from './Card';
 
 function Project() {
   return (
-    <section className='section-projects style' id='projects'>
+    <section className='section-projects style flex' id='projects'>
+      <h2 className="title">
+      Projets
+      </h2>
       <div className="filter flex">
         <button className='active'>Tous les Projets</button>
         <button>Projets Formations </button>

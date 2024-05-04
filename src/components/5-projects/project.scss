@@ -14,10 +14,13 @@ table of contents
 
 
 .section-projects {
+    flex-direction: column;
+    justify-content: center;
     .filter{
         margin: 3rem 0;
         gap: 2rem;
         justify-content: center;
+        
         button{
             border: 2px mixins-variables.$primary--header--color solid;
             background-color: mixins-variables.$primary--header--color;
@@ -50,6 +53,8 @@ table of contents
 =========================*/
 @media screen and (max-width: 767px) {
     .section-projects {
+        flex-direction: column;
+
         .filter{
             gap: 0.6rem;
             button{
