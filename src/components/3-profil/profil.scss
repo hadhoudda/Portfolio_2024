@@ -19,6 +19,7 @@
     .text-profil{
       text-align:justify;
       line-height:2;
+      color: darken( mixins-variables.$primary--title--color,20%);
     }
   }
 }
@@ -44,4 +45,17 @@
           }
         }
       }
+}
+
+@media screen and (max-width: 767px) {
+  .section-profil {
+      .container-profil {
+        margin: 0 1rem;
+        .img-profil {
+          margin-top: 3rem;
+          width: 220px;
+          height: 250px;
+        }
+      }
+    }
 }

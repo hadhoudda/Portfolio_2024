@@ -5,7 +5,7 @@ function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
   
   return (
-    <header className="style flex">
+    <header className="style flex" id="up">
       <button className="btn-mode">
         {/* <i className="fa-regular fa-sun icone-sun flex"></i> */}
         <i className="fa-regular fa-moon icone-moon flex "></i>

@@ -7,20 +7,51 @@
 .section-skills{
     flex-direction: column;
     justify-content: center;
-   .title-techno,
-   .title-outils{
-    display: inline;
-        border-bottom: 2px solid mixins-variables.$primary--btn--filter--color;
-        
-   }
+  
     .skills-technos,
     .skills-outils{
-        font-size: 3.5rem;
+        
         gap: 3rem;
         justify-content: center;
         flex-wrap: wrap;
+        .skill{
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+
+       i{
+            font-size: 3.5rem;
+            &:hover{
+                transition: 0.3s;
+                scale: 1.2;
+        }
+        }
+        p{
+            font-size: 1.2rem;
+            color: mixins-variables.$primary--link--social--color;
+        }
+         }
     }
 }
 
+@media screen and (max-width: 767px) {
+.section-skills{
+    .skills-technos,
+    .skills-outils{
+        gap: 2rem;
+        .skill{
+            gap: 0.8rem;
+
+       i{
+           
+        }
+        p{
+            font-size: 1rem;
+         }
+         }
+    }
+}
+    
+  }
 
   
