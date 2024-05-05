@@ -30,6 +30,7 @@ figure {
   height: 250px;
   align-items: start;
   margin: 0 auto;
+  animation: mymove 1s 1;
   background-image: linear-gradient(
     mixins-variables.$secondary--title--color,
     mixins-variables.$primary--header--color
@@ -218,3 +219,11 @@ figure {
     }
   }
 }
+
+@keyframes mymove{
+  0% {scale: 0.5;}
+  60% {scale: 1;}
+
+  100% {scale: 1;}
+}
+

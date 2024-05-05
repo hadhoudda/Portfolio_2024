@@ -6,7 +6,6 @@ function Home() {
   const [showBtnScroll, setshowBtnScroll] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      console.log(window.scrollY)
       if (window.scrollY > 1)
         setshowBtnScroll(true);
       else setshowBtnScroll(false);
