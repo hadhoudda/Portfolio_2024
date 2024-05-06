@@ -6,6 +6,17 @@ import { useState } from "react";
 function Project() {
   const [classActive, setclassActive] = useState("all");
   const [dataFilter, setdataFilter] = useState(data);
+  function handleClick(parms) {
+    setclassActive(parms);
+    const newData = data.filter((item)=>{
+      const categorys = item.category.filter((categor)=>
+        {console.log(categor)
+         return   categor === parms 
+          })
+          return categorys[0]=== parms
+    })
+    setdataFilter(newData)
+  }
 
   return (
     <section className="section-projects style flex" id="projects">
@@ -13,9 +24,7 @@ function Project() {
       <div className="filter flex">
         <button
           onClick={() => {
-            setclassActive("all");
-            const newData = data;
-            setdataFilter(newData);
+            handleClick("all");
           }}
           className={classActive === "all" ? "active" : null}
         >
@@ -23,11 +32,7 @@ function Project() {
         </button>
         <button
           onClick={() => {
-            setclassActive("formation");
-            const newData = data.filter((item)=>{
-              return item.category === "formation"
-            })
-            setdataFilter(newData);
+            handleClick("formation");
           }}
           className={classActive === "formation" ? "active" : null}
         >
@@ -35,11 +40,7 @@ function Project() {
         </button>
         <button
           onClick={() => {
-            setclassActive("personel");
-            const newData = data.filter((item)=>{
-              return item.category === "personel"
-            })
-            setdataFilter(newData);
+            handleClick("personel");
           }}
           className={classActive === "personel" ? "active" : null}
         >
