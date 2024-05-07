@@ -1,5 +1,4 @@
 @use "../../styles/mixins-variables";
-@use "../../styles/functions";
 
 
 /*======================== 
@@ -45,6 +44,7 @@ table of contents
         width: 100%;
         gap: 2.5rem;
         flex-wrap: wrap;
+        
 
     }
 }

@@ -6,16 +6,16 @@ import { useState } from "react";
 function Project() {
   const [classActive, setclassActive] = useState("all");
   const [dataFilter, setdataFilter] = useState(data);
-  function handleClick(parms) {
+  
+  const  handleClick = (parms)=> {
     setclassActive(parms);
-    const newData = data.filter((item)=>{
-      const categorys = item.category.filter((categor)=>
-        {console.log(categor)
-         return   categor === parms 
-          })
-          return categorys[0]=== parms
-    })
-    setdataFilter(newData)
+    const newData = data.filter((item) => {
+      const categorys = item.category.find((categor) => {
+        return categor === parms;
+      });
+      return categorys === parms;
+    });
+    setdataFilter(newData);
   }
 
   return (

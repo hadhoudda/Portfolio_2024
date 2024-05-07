@@ -1,5 +1,4 @@
 @use "../../styles/mixins-variables";
-@use "../../styles/functions";
 
 /*======================== 
 table of contents
@@ -23,9 +22,10 @@ header {
   .nav-mobil {
     display: none;
   }
-  .btn-menu{
-    font-size: 160%;
-    color:  mixins-variables.$primary--title--color;
+  .logo{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
   }
   /*======================== 
   2-nav desktop

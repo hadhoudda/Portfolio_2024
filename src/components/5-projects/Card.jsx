@@ -13,7 +13,7 @@ function Card({ project }) {
           alt={"l'image de la projet" + project?.title}
         />
         <figcaption>
-          <h2>{project?.title}</h2>
+          <h2 className="title-project">{project?.title}</h2>
           <div className="links-project">
             <div className="icon-link flex">
               <a href={project?.link}>

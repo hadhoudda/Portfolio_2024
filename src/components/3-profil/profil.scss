@@ -1,5 +1,4 @@
 @use "../../styles/mixins-variables";
-@use "../../styles/functions";
 
 .section-profil {
   
@@ -14,6 +13,10 @@
       border-radius:2%;
       padding:1px;
       border:1px solid mixins-variables.$primary--title--color;
+      &:hover{
+        transition: 0.2s;
+       
+      }
     }
 
     .text-profil{
