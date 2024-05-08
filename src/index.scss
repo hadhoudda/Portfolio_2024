@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-body {
+html {
   max-width: 1990px;
   min-width: 320px;
   font-family: mixins-variables.$font--body;
@@ -32,6 +32,11 @@ button {
   &:active {
     scale: 0.9;
   }
+}
+
+button:disabled{
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 
 .flex {
