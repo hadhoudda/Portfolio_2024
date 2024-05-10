@@ -12,7 +12,6 @@ table of contents
 1- section
 =========================*/
 .home {
-  height: 90vh;
   /*======================== 
 1-left section
 =========================*/
@@ -87,7 +86,19 @@ table of contents
   /*======================== 
 2-right section
 =========================*/
-
+.section-right{
+  .animation-dev{
+    margin: 2rem;
+    height: 350px;
+    width: 350px;
+  }
+}
+.section-right{
+  display: none;
+}
+  /*======================== 
+2-scroll button
+=========================*/
   .btn-scroll-top {
     position: fixed;
     right: 4%;
@@ -112,7 +123,6 @@ table of contents
 =========================*/
 @media screen and (max-width: 777px) {
   .home {
-    height: auto;
     .section-left {
       .image-profil {
         img {

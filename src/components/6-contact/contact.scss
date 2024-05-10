@@ -56,6 +56,9 @@ table of contents
                     scale: 0.9;
                 }
                 }
+                .message-confirm {
+                    font-size: 1.2rem;
+                }
                 
             }
             .info-form{
@@ -63,6 +66,7 @@ table of contents
             }
            
         }
+   
 
     
     }
@@ -72,6 +76,8 @@ table of contents
     .contact{
         flex-direction: column;
         align-items: start;
+        margin-top: 10rem;
+       
         gap: 1.2rem;
         a{ 
             font-size: 1rem;
@@ -86,7 +92,11 @@ table of contents
             }
         }
         }
-        
+        .animation-contact{
+            height:150px;
+            align-self: center;
+        }
+            
     }
 }
 
@@ -95,10 +105,19 @@ table of contents
 =========================*/
 @media screen and (max-width: 998px) {
     .section-contact{
+        margin-top: 0rem;
         width: 98%;
         .form{
             
             width: 70%;
+            .form-contact{
+                .container-send{
+                    .message-confirm {
+                        font-size: 1rem;
+                    }
+                    
+                }
+            }
         }
         .contact{
             gap: 0.8rem;
@@ -128,10 +147,14 @@ table of contents
         }
 
         .contact{
+            margin-top: 0;
             a{ 
                 font-size: 0.8rem;
                 color:lighten(mixins-variables.$border--body--color,30%);
                 
+            }
+            .animation-contact{
+                height:70px;
             }
             
         }

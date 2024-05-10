@@ -47,7 +47,7 @@ button:disabled{
 .title {
   font-size: 3rem;
   font-weight: 900;
-  margin: 5rem 0;
+  margin: 4rem 0;
   text-align: center;
   color: mixins-variables.$primary--title--color;
   display: inline;
@@ -94,6 +94,7 @@ Scrollbar
   }
   .title{
     font-size: 2.2rem;
+    margin: 2rem 0;
   }
 }
  

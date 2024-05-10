@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import "./home.scss";
+import Devanimation from '../../../public/animations/dev.json';
 import { useState } from "react";
+import Lottie from "lottie-react";
 
 function Home() {
   const [showBtnScroll, setshowBtnScroll] = useState(false);
@@ -14,7 +16,7 @@ function Home() {
 
   return (
     <>
-      <section className="style home" id="home">
+      <section className="style home flex" id="home">
         <div className="section-left">
           <div className="image-profil flex">
             <img
@@ -48,7 +50,9 @@ function Home() {
             </a>
           </button>
         </div>
-        <div className="section-right flex"></div>
+        <div className="section-right flex">
+        <Lottie className="animation-dev" animationData = {Devanimation} />
+        </div>
       
           <a style={{opacity: showBtnScroll? 1 : 0}} href="#up" className="btn-scroll-top flex">
             <i className="fa-solid fa-chevron-up"></i>

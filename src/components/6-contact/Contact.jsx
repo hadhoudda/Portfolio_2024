@@ -1,16 +1,12 @@
 import {useState}  from "react";
 import { useForm, ValidationError } from "@formspree/react";
+import Lottie from "lottie-react";
 import "./contact.scss";
+import DonaAnimation from '../../../public/animations/done.json';
+import Contactanimation from '../../../public/animations/contact.json';
 
 function Contact() {
   const [state, handleSubmit] = useForm("xzbnwpzl");
-  const [isAlert, setAlert] = useState(false);
-  const handleAlert = () =>{
-        setAlert(true);
-        setTimeout(() => {
-            setAlert(false);}, 400);
-        }
-    
   
   return (
     <section className="section-contact style flex" id="contact">
@@ -20,9 +16,9 @@ function Contact() {
           N'hésitez pas à me contacter, je vous répondrai dans 24h.
         </p>
 
-        {/* <form ref={form} onSubmit={sendEmail} className="form-contact "> */}
         <form onSubmit={handleSubmit} className="form-contact flex">
           <input
+            autoComplete="off"
             type="text"
             id="name"
             placeholder="votre nom*"
@@ -31,6 +27,7 @@ function Contact() {
           />
 
           <input
+            autoComplete="off"
             type="email"
             id="email"
             placeholder="Votre email*"
@@ -50,11 +47,7 @@ function Contact() {
             errors={state.errors}
           />
           <div className="container-send">
-            {/* {isAlert && <p className="message-confirm">message bien envoyé</p>} */}
-            {/* <p className="message-confirm">message bien envoyé</p> */}
-            {/* <button onClick={handleAlert} type="submit" className="btn-message"> */}
             <button
-            onSubmit={handleAlert}
               type="submit"
               disabled={state.submitting}
               className="btn-contact"
@@ -64,7 +57,9 @@ function Contact() {
             </button>
             { /* ======Message to send======== */ }
 
-            { state.succeeded && setAlert && (<p className="message-confirm">message bien envoyé  ✅ </p>)
+            { state.succeeded && (<p className="message-confirm flex">Message bien envoyé 
+            <Lottie loop={false} style={{height:40}} animationData = {DonaAnimation} />
+            </p>)
               
             }
           </div>
@@ -82,6 +77,7 @@ function Contact() {
         <a href="https://www.linkedin.com/in/houda-ben-abdallah-developpeuse-web/">
           <i className="fa-brands fa-linkedin"></i>: Linkedin
         </a>
+        <Lottie className="animation-contact" animationData = {Contactanimation} />
       </div>
     </section>
   );
