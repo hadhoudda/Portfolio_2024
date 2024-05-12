@@ -16,15 +16,8 @@ function Home() {
     <>
       <section className="style home flex" id="home">
         <div className="section-home">
-          <div className="image-profil flex">
-            <img
-              src="../src/images/mon-photo.webp"
-              alt="photo profil de houda"
-            />
-            <i className="fa-solid fa-check icone-verified"></i>
-          </div>
           <h1>
-            Hi, I&rsquo; Am <span id="name">HOUDA</span>
+            Hi, I&rsquo; Am <span id="my-name">HOUDA</span>
           </h1>
           <h2>Développeuse full-stack Web & Mobile </h2>
 
@@ -42,7 +35,7 @@ function Home() {
               <i className="fa-brands fa-whatsapp "></i>
             </a>
           </div>
-          <button className="btn-cv flex">
+          <button className="btn-cv ">
             <a href="./cv.pdf" download>
               Télécharger mon CV
             </a>

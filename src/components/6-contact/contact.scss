@@ -19,13 +19,14 @@ table of contents
     color: lighten(mixins-variables.$primary--title--color, 30%);
     font-size: 0.7rem;
     text-align: center;
-    /*======================== 
+/*======================== 
 2-form
 =========================*/
     .form{
         flex-direction: column;
         justify-content: center;
         width: 75%;
+        
         .form-contact{
             flex-direction: column;
             justify-content: center;
@@ -38,13 +39,13 @@ table of contents
                 background-color:mixins-variables.$primary--header--color;
                 border-radius: 5px;
                 border: 1px solid lighten(mixins-variables.$border--body--color,20%);
-                
+                color: white;
             }
             textarea{
                 width: 80%;
                 height: 200px;
                 background-color:mixins-variables.$primary--header--color;
-                
+                color: white;
             }
             .container-send{
                 .btn-contact{

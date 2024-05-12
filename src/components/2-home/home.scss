@@ -12,47 +12,33 @@ table of contents
 1- section
 =========================*/
 .home {
+  height: 90vh;
   margin: 0.5rem 1rem;
   /*======================== 
 1-home section
 =========================*/
   .section-home {
-    flex-grow: 1;
     color: mixins-variables.$primary--title--color;
-    flex-direction: column;
-    .image-profil {
-      align-items: end;
-      padding: 2rem 0;
-      img {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        border: 2px solid rgb(194, 188, 205);
-      }
-      .icone-verified {
-        font-size: 80%;
-        border-radius: 50%;
-        padding: 0.2rem;
-        background-color: mixins-variables.$blue;
-        margin-bottom: 0.3rem;
-      }
-    }
+    text-align: center;
+    width: 100%;
 
     h1,
     h2 {
       font-size: 3rem;
       margin-bottom: 1.3rem;
       color: mixins-variables.$primary--title--color;
-      animation: mymovetitle 2s 1;
+      animation: mymovetitle 1.4s 1;
       span {
         font-weight: 900;
+        font-size: 4rem;
         color: mixins-variables.$primary--hover--color;
       }
     }
 
     .link-social {
       gap: 1.5rem;
-      margin: 2rem 2rem 2rem 0;
+      margin: 4rem 2rem 2rem 0;
+     justify-content: center;
       i {
         color: mixins-variables.$primary--link--social--color;
         font-size: 150%;
@@ -65,18 +51,19 @@ table of contents
       }
     }
     .btn-cv {
-      background-color: darken(
+      padding: 0.3rem 0 ;
+      border:2px  darken(
         mixins-variables.$primary--btn--filter--color,
         2%
-      );
+      ) solid;
       border-radius: 20px;
-      align-items: center;
+      box-shadow: 1px 1px 5px mixins-variables.$primary--link--social--color;
       margin-top: 3rem;
       &:hover {
         cursor: pointer;
         transition: 0.3s;
         scale: 1.1;
-        box-shadow: 1px 1px 10px mixins-variables.$primary--box--shadow--color;
+        box-shadow: 1px 1px 15px mixins-variables.$primary--link--social--color;
       }
       a {
         font-size: 0.6rem;
@@ -126,6 +113,9 @@ table of contents
       h2 {
         font-size: 2rem;
         margin-bottom: 1.3rem;
+        span{
+          font-size: 3rem;
+        }
       }
     }
     .btn-scroll-top {
