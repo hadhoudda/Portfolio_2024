@@ -4,15 +4,15 @@
 table of contents
 ==========================
 1-home section
-2-
-3-responsive
+2-link social 
+3-button cv
+4-scroll button
+5-responsive 777px
+6-animation
 =========================*/
 
-/*======================== 
-1- section
-=========================*/
 .home {
-  margin: 4rem 1rem  3rem 0;
+  padding: 8rem 1rem 3rem 0;
   /*======================== 
 1-home section
 =========================*/
@@ -27,18 +27,20 @@ table of contents
       margin-bottom: 1.3rem;
       color: mixins-variables.$primary--title--color;
       animation: mymovetitle 1.4s 1;
-      .my-name{
+      .my-name {
         font-weight: 900;
         font-size: 4rem;
         text-shadow: 1px 1px 2px pink;
         animation: animate 3s infinite;
       }
     }
-
+    /*========================
+2-link social 
+=========================*/
     .link-social {
       gap: 1.5rem;
       margin: 4rem 2rem 2rem 0;
-     justify-content: center;
+      justify-content: center;
       i {
         color: mixins-variables.$primary--link--social--color;
         font-size: 150%;
@@ -50,15 +52,17 @@ table of contents
         }
       }
     }
+    /*========================
+3-button cv
+=========================*/
     .btn-cv {
-      padding: 0.3rem 0 ;
-      border:2px  darken(
-        mixins-variables.$primary--btn--filter--color,
-        2%
-      ) solid;
+      margin-bottom: 3rem;
+      padding: 0.3rem 0;
+      border: 2px darken(mixins-variables.$primary--btn--filter--color, 2%)
+        solid;
       border-radius: 20px;
       box-shadow: 1px 1px 5px mixins-variables.$primary--link--social--color;
-      margin-top: 3rem;
+      margin-top: 2rem;
       &:hover {
         cursor: pointer;
         transition: 0.3s;
@@ -75,7 +79,7 @@ table of contents
   }
 
   /*======================== 
-2-scroll button
+4-scroll button
 =========================*/
   .btn-scroll-top {
     position: fixed;
@@ -97,11 +101,11 @@ table of contents
   }
 }
 /*======================== 
-3-responsive
+5-responsive 777px
 =========================*/
 @media screen and (max-width: 777px) {
   .home {
-    margin: 0;
+    padding: 3rem 1rem 1rem 0;
     .section-home {
       .image-profil {
         img {
@@ -113,8 +117,15 @@ table of contents
       h2 {
         font-size: 2rem;
         margin-bottom: 1.3rem;
-        .my-name{
+        .my-name {
           font-size: 3rem;
+        }
+      }
+      .btn-cv {
+        margin-bottom: 2rem;
+        a {
+          font-size: 0.6rem;
+          font-weight: 400;
         }
       }
     }
@@ -125,13 +136,15 @@ table of contents
     }
   }
 }
-
+/*======================== 
+6-animation
+=========================*/
 @keyframes mymovetitle {
   0% {
     scale: 0.2;
     opacity: 0.1;
   }
-  
+
   100% {
     scale: 1;
     opacity: 1;
@@ -139,13 +152,13 @@ table of contents
 }
 
 @keyframes animate {
-  30%{
+  30% {
     color: rgb(171, 15, 188);
   }
-  70%{
+  70% {
     color: rgb(205, 235, 11);
   }
-  100%{
+  100% {
     color: mixins-variables.$primary--hover--color;
   }
 }

@@ -1,23 +1,33 @@
 @use "../../styles/mixins-variables";
 
+/*======================== 
+table of contents
+==========================
+1-footer
+2-responsive 767px
+=========================*/
 
-footer{
-    p{
-        text-align: center;
-        font-size: 0.8rem;
-        padding: 1rem 0;
-        color: mixins-variables.$primary--title--color;
-        border-top: 1px solid rgba(255, 255, 255, 0.127);
-        
-    }
+/*======================== 
+1-footer
+=========================*/
+footer {
+  p {
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 1rem 0;
+    color: mixins-variables.$primary--title--color;
+    border-top: 1px solid rgba(255, 255, 255, 0.127);
+  }
 }
 
+/*======================== 
+2-responsive 767px
+=========================*/
 @media screen and (max-width: 767px) {
-    footer{
-        p{
-            font-size: 0.6rem;
-            padding: 0.5rem 0;
-        }
+  footer {
+    p {
+      font-size: 0.6rem;
+      padding: 0.5rem 0;
     }
-
+  }
 }

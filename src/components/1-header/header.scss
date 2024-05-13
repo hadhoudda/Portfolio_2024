@@ -5,24 +5,24 @@ table of contents
 ==========================
 1-header
 2-nav desktop
-3-responsive
+3-responsive 767px
 4-nav mobil
 5-animation
 =========================*/
-
 
 /*======================== 
 1-header
 =========================*/
 header {
-  justify-content:space-between;
+  justify-content: space-between;
   background-color: mixins-variables.$primary--header--color;
   border-radius: 22px;
+  padding: 1rem;
   .btn-menu,
   .nav-mobil {
     display: none;
   }
-  .logo{
+  .logo {
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -56,41 +56,21 @@ header {
       }
     }
   }
-    .icone-moon,
-    .icone-sun {
-      border-radius: 50px;
-      padding: 6px;
-      border: 1px solid rgb(99, 98, 98);
-      color: #91908a;
-      height: 1.8rem;
-      width: 1.8rem;
-      font-size: 120%;
-      justify-content: center;
-      &:hover{
-        border: 1px solid rgb(235, 230, 230);
-        color: aliceblue;
-      }
-    }
-  .icone-sun{
-    color: rgb(249, 237, 74);
-    &:hover{
-      border: 1px solid rgb(212, 223, 19);
-      color: rgb(237, 245, 2);
-    }
-  }
+  
 }
 /*======================== 
-3-responsive
+3-responsive 767px
 =========================*/
 @media screen and (max-width: 767px) {
   header {
+    padding: 0.5rem 1rem;
     .link-logo,
     .nav-desktop {
       display: none;
     }
     .btn-menu {
       display: block;
-      &:hover{
+      &:hover {
         cursor: pointer;
       }
     }
@@ -103,7 +83,7 @@ header {
       inset: 0;
       z-index: 3;
       background-color: rgba(66, 59, 59, 0.843);
-      .modal {
+      .modal-menu {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -114,13 +94,12 @@ header {
         animation: slidein 0.7s 1;
         li:first-child {
           text-align: right;
-          i{
-            &:hover{
+          i {
+            &:hover {
               transition: 0.3s;
               rotate: 180deg;
+            }
           }
-          }
-          
         }
         li:not(:first-child) {
           text-align: center;
@@ -143,11 +122,9 @@ header {
       margin-left: 100%;
       width: 300%;
     }
-
     to {
       margin-left: 0%;
       width: 100%;
     }
   }
 }
-

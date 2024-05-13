@@ -1,27 +1,19 @@
 // Variables :
 
-//----colors dark mode----//
+//---- colors ----//
 
 $primary--body--color: #1d1c1c;
-$secondary--body--color:#303030;
-$border--body--color:#414141;
-$primary--title--color:rgba(255, 255, 255, 0.726);
-$secondary--title--color:rgb(21, 21, 22);
-$primary--header--color:rgb(62, 58, 58);
-$primary--nav--color:rgb(27, 27, 27);
-$secondary--nav--color:rgb(248, 245, 245);
-$primary--hover--color:rgba(239, 178, 47, 0.8);
-$blue: rgb(14, 155, 249);
+$secondary--body--color: #303030;
+$border--body--color: #414141;
+$primary--title--color: rgba(255, 255, 255, 0.726);
+$secondary--title--color: rgb(21, 21, 22);
+$primary--header--color: rgb(62, 58, 58);
+$primary--nav--color: rgb(27, 27, 27);
+$secondary--nav--color: rgb(248, 245, 245);
+$primary--hover--color: rgba(239, 178, 47, 0.8);
 $primary--link--social--color: rgba(255, 255, 255, 0.403);
-$hover--link--social--color:rgba(255, 255, 255, 0.842);
-$primary--btn--filter--color:rgb(138, 84, 4);
-$primary--box--shadow--color:white;
+$hover--link--social--color: rgba(255, 255, 255, 0.842);
+$primary--btn--filter--color: rgb(138, 84, 4);
 
-
-
-//----colors light mode----//
-$light--body--color: #f3eded;
-//-----font ----//
-$font--body:'Noto Serif','Courier New', Courier, monospace, sans-serif;
-
-//mixins
+//----- font ----//
+$font--body: "Noto Serif", "Courier New", Courier, monospace, sans-serif;

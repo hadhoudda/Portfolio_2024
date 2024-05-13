@@ -36,7 +36,7 @@ function Header() {
       </div>
       {toggleMenu && (
         <div className="nav-mobil">
-          <ul className="modal">
+          <ul className="modal-menu">
             <li>
               <button
                 onClick={() => {

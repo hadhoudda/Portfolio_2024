@@ -1,56 +1,56 @@
 @use "../../styles/mixins-variables";
 
+/*======================== 
+table of contents
+==========================
+1-skill section
+2-responsive 767px
+=========================*/
 
-
-
-.section-skills{
-    flex-direction: column;
+/*======================== 
+1-skill section
+=========================*/
+.section-skills {
+  flex-direction: column;
+  justify-content: center;
+  .skills-technos,
+  .skills-outils {
+    gap: 3rem;
     justify-content: center;
-  
-    .skills-technos,
-    .skills-outils{
-        
-        gap: 3rem;
-        justify-content: center;
-        flex-wrap: wrap;
-        .skill{
-            flex-direction: column;
-            justify-content: center;
-            gap: 1rem;
-
-       i{
-            font-size: 3.5rem;
-            &:hover{
-                transition: 0.3s;
-                scale: 1.2;
+    flex-wrap: wrap;
+    .skill {
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
+      i {
+        font-size: 3.5rem;
+        &:hover {
+          transition: 0.3s;
+          scale: 1.2;
         }
-        }
-        p{
-            font-size: 1.2rem;
-            color: mixins-variables.$primary--link--social--color;
-        }
-         }
+      }
+      .text-skill {
+        font-size: 1.2rem;
+        color: mixins-variables.$primary--link--social--color;
+      }
     }
-}
-
-@media screen and (max-width: 767px) {
-.section-skills{
-    .skills-technos,
-    .skills-outils{
-        gap: 2rem;
-        .skill{
-            gap: 0.8rem;
-
-       i{
-           
-        }
-        p{
-            font-size: 1rem;
-         }
-         }
-    }
-}
-    
   }
+}
 
-  
+/*======================== 
+2-responsive 767px
+=========================*/
+@media screen and (max-width: 767px) {
+  .section-skills {
+    .skills-technos,
+    .skills-outils {
+      gap: 2rem;
+      .skill {
+        gap: 0.8rem;
+        .text-skill {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

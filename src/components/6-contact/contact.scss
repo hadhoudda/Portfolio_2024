@@ -13,152 +13,140 @@ table of contents
 /*======================== 
 1-section-contact
 =========================*/
-.section-contact{
-    width: 95%;
-    margin-top: 3rem;
-    color: lighten(mixins-variables.$primary--title--color, 30%);
-    font-size: 0.7rem;
-    text-align: center;
-/*======================== 
+.section-contact {
+  width: 95%;
+  margin-top: 3rem;
+  color: lighten(mixins-variables.$primary--title--color, 30%);
+  font-size: 0.7rem;
+  text-align: center;
+  /*======================== 
 2-form
 =========================*/
-    .form{
-        flex-direction: column;
-        justify-content: center;
-        width: 75%;
-        
-        .form-contact{
-            flex-direction: column;
-            justify-content: center;
-            margin: 2rem 0;
-            gap: 1.2rem;
-            width: 100%;
-            input{
-                width: 80%;
-                height: 2.5rem;
-                background-color:mixins-variables.$primary--header--color;
-                border-radius: 5px;
-                border: 1px solid lighten(mixins-variables.$border--body--color,20%);
-                color: white;
-            }
-            textarea{
-                width: 80%;
-                height: 200px;
-                background-color:mixins-variables.$primary--header--color;
-                color: white;
-            }
-            .container-send{
-                .btn-contact{
-                    background-color: lighten(mixins-variables.$primary--btn--filter--color,5%);
-                padding: 0.5rem 1.4rem;
-                border-radius: 15px;
-                font-weight: 600;
-                &:hover{
-                    scale: 0.9;
-                }
-                }
-                .message-confirm {
-                    font-size: 1.2rem;
-                }
-                .lottie-ok{
-                    height: 40px;
-                }
-                
-            }
-            .info-form{
-                color:lighten(mixins-variables.$border--body--color,20%);
-            }
-           
+  .form {
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+    .form-contact {
+      flex-direction: column;
+      justify-content: center;
+      margin: 2rem 0;
+      gap: 1.2rem;
+      width: 100%;
+      input {
+        width: 80%;
+        height: 2.5rem;
+        background-color: mixins-variables.$primary--header--color;
+        border-radius: 5px;
+        border: 1px solid lighten(mixins-variables.$border--body--color, 20%);
+        color: white;
+      }
+      textarea {
+        width: 80%;
+        height: 200px;
+        background-color: mixins-variables.$primary--header--color;
+        color: white;
+      }
+      .container-send {
+        .btn-contact {
+          background-color: lighten(
+            mixins-variables.$primary--btn--filter--color,
+            5%
+          );
+          padding: 0.5rem 1.4rem;
+          border-radius: 15px;
+          font-weight: 600;
+          &:hover {
+            scale: 0.9;
+          }
         }
-   
-
-    
+        .message-confirm {
+          font-size: 1.2rem;
+        }
+        .lottie-ok {
+          height: 40px;
+        }
+      }
+      .info-form {
+        color: lighten(mixins-variables.$border--body--color, 20%);
+      }
     }
-/*======================== 
+  }
+  /*======================== 
 3-contact
 =========================*/
-    .contact{
-        flex-direction: column;
-        align-items: start;
-        margin-top: 10rem;
-       
-        gap: 1.2rem;
-        a{ 
-            font-size: 1rem;
-            color:lighten(mixins-variables.$border--body--color,30%);
-            i{
-            font-size: 1.6rem;
-            padding-right: 1.2rem;
-            color: lighten(mixins-variables.$primary--btn--filter--color,5%);
-            &:hover{
-                transition: 0.3s;
-                scale: 0.9;
-            }
+  .contact {
+    flex-direction: column;
+    align-items: start;
+    margin-top: 10rem;
+    gap: 1.2rem;
+    a {
+      font-size: 1rem;
+      color: lighten(mixins-variables.$border--body--color, 30%);
+      i {
+        font-size: 1.6rem;
+        padding-right: 1.2rem;
+        color: lighten(mixins-variables.$primary--btn--filter--color, 5%);
+        &:hover {
+          transition: 0.3s;
+          scale: 0.9;
         }
-        }
-        .animation-contact{
-            height:150px;
-            align-self: center;
-        }
-            
+      }
     }
+    .animation-contact {
+      height: 150px;
+      align-self: center;
+    }
+  }
 }
 
 /*======================== 
 4-responsive 998px
 =========================*/
 @media screen and (max-width: 998px) {
-    .section-contact{
-        margin-top: 0rem;
-        .form{
-            .form-contact{
-                width: 100%;
-                .container-send{
-                    .message-confirm {
-                        font-size: 1rem;
-                    }
-                    
-                }
-            }
+  .section-contact {
+    margin-top: 0rem;
+    .form {
+      .form-contact {
+        width: 100%;
+        .container-send {
+          .message-confirm {
+            font-size: 1rem;
+          }
         }
-        .contact{
-            gap: 0.8rem;
-            a{ 
-                font-size: 1rem;
-                i{
-                font-size: 1.2rem;
-                padding-right: 1rem;
-                
-            }
-            }
-            
+      }
+    }
+    .contact {
+      gap: 0.8rem;
+      a {
+        font-size: 1rem;
+        i {
+          font-size: 1.2rem;
+          padding-right: 1rem;
         }
-        
+      }
+    }
   }
 }
 
 /*======================== 
-5-responsive 998px
+5-responsive 767px
 =========================*/
 @media screen and (max-width: 767px) {
-    .section-contact{
-        flex-direction: column;
-        .form{
-            
-            width: 100%;
-        }
-
-        .contact{
-            margin-top: 0;
-            a{ 
-                font-size: 0.8rem;
-                color:lighten(mixins-variables.$border--body--color,30%);
-                
-            }
-            .animation-contact{
-                height:70px;
-            }
-            
-        }
+  .section-contact {
+    flex-direction: column;
+    .form {
+      width: 100%;
     }
+    .contact {
+      margin-top: 0;
+      margin-bottom: 3rem;
+      a {
+        font-size: 0.8rem;
+        color: lighten(mixins-variables.$border--body--color, 30%);
+      }
+      .animation-contact {
+        display: none;
+      }
+    }
+  }
 }
