@@ -69,6 +69,10 @@ figure {
       justify-content: space-between;
       .icon-link {
         gap: 0.5rem;
+        .title-link{
+          color: darken(mixins-variables.$primary--title--color, 30%);
+          font-size: 0.8rem;
+        }
 
         a {
           color: darken(mixins-variables.$primary--title--color, 30%);
@@ -108,7 +112,7 @@ figure {
     inset: 0;
     margin: auto;
     width: 60%;
-    height: 250px;
+    height: 300px;
     min-width: 320px;
     z-index: 11;
     color:lighten(mixins-variables.$primary--title--color,20%);
@@ -135,8 +139,9 @@ figure {
       }
       .body-modal{
         padding: 1rem;
-        font-size: 0.8rem;
+        font-size: 1rem;
         text-align: justify;
+        line-height: 2em;
       }
       .footer-modal{
         justify-content: center;
@@ -149,21 +154,9 @@ figure {
 /*======================== 
 4-responsive 1044px
 =========================*/
+
+
 @media screen and (max-width: 1044px) {
-  figure {
-    figcaption {
-      .title-project {
-        font-size: 1.08rem;
-        font-weight: 600;
-        margin-bottom: 1.3rem;
-      }
-    }
-  }
-}
-/*======================== 
-4-responsive 767px
-=========================*/
-@media screen and (max-width: 767px) {
   figure {
     width: 45%;
     height: 250px;
@@ -195,11 +188,10 @@ figure {
     }
   }
 }
-
 /*======================== 
-5-responsive 468px
+4-responsive 767px
 =========================*/
-@media screen and (max-width: 468px) {
+@media screen and (max-width: 767px) {
   figure {
     width: 88%;
     height: 220px;
@@ -223,5 +215,6 @@ figure {
 @keyframes mymove{
   0% {scale: 0.4;}
   100% {scale: 1;}
+
 }
 

@@ -12,8 +12,7 @@ table of contents
 1- section
 =========================*/
 .home {
-  height: 90vh;
-  margin: 0.5rem 1rem;
+  margin: 4rem 1rem  3rem 0;
   /*======================== 
 1-home section
 =========================*/
@@ -28,10 +27,11 @@ table of contents
       margin-bottom: 1.3rem;
       color: mixins-variables.$primary--title--color;
       animation: mymovetitle 1.4s 1;
-      span {
+      .my-name{
         font-weight: 900;
         font-size: 4rem;
-        color: mixins-variables.$primary--hover--color;
+        text-shadow: 1px 1px 2px pink;
+        animation: animate 3s infinite;
       }
     }
 
@@ -113,7 +113,7 @@ table of contents
       h2 {
         font-size: 2rem;
         margin-bottom: 1.3rem;
-        span{
+        .my-name{
           font-size: 3rem;
         }
       }
@@ -135,5 +135,17 @@ table of contents
   100% {
     scale: 1;
     opacity: 1;
+  }
+}
+
+@keyframes animate {
+  30%{
+    color: rgb(171, 15, 188);
+  }
+  70%{
+    color: rgb(205, 235, 11);
+  }
+  100%{
+    color: mixins-variables.$primary--hover--color;
   }
 }

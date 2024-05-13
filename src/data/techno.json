@@ -1,0 +1,52 @@
+[
+    {
+        "id":"st1",
+        "title" : "Html5",
+        "icone" : "devicon-html5-plain colored"
+    },
+    {
+        "id":"st2",
+        "title" : "Css3",
+        "icone" : "devicon-css3-plain colored"
+    },
+    {
+        "id":"st3",
+        "title" : "Sass",
+        "icone" : "devicon-sass-original colored"
+    },
+    {
+        "id":"st4",
+        "title" : "Bootstrap",
+        "icone" : "devicon-bootstrap-plain colored"
+    },
+    {
+        "id":"st5",
+        "title" : "JavaScript",
+        "icone" : "devicon-javascript-plain colored"
+    },
+    {
+        "id":"st6",
+        "title" : "React",
+        "icone" : "devicon-react-original colored"
+    },
+    {
+        "id":"st7",
+        "title" : "Java",
+        "icone" : "devicon-java-plain colored"
+    },
+    {
+        "id":"st8",
+        "title" : "Spring",
+        "icone" : "devicon-spring-original colored"
+    },
+    {
+        "id":"st9",
+        "title" : "SQL",
+        "icone" : "devicon-azuresqldatabase-plain colored"
+    },
+    {
+        "id":"st1",
+        "title" : "MySql",
+        "icone" : "devicon-mysql-original colored"
+    }
+]

@@ -1,13 +1,11 @@
-import { useEffect } from "react";
+import React, { useEffect,useState } from "react";
 import "./home.scss";
-import { useState } from "react";
 
 function Home() {
   const [showBtnScroll, setshowBtnScroll] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 1)
-        setshowBtnScroll(true);
+      if (window.scrollY > 1) setshowBtnScroll(true);
       else setshowBtnScroll(false);
     });
   }, []);
@@ -17,7 +15,7 @@ function Home() {
       <section className="style home flex" id="home">
         <div className="section-home">
           <h1>
-            Hi, I&rsquo; Am <span id="my-name">HOUDA</span>
+            Hi, I&rsquo; Am <span className="my-name">HOUDA</span>
           </h1>
           <h2>Développeuse full-stack Web & Mobile </h2>
 
@@ -41,12 +39,13 @@ function Home() {
             </a>
           </button>
         </div>
-        
-      
-          <a style={{opacity: showBtnScroll? 1 : 0}} href="#up" className="btn-scroll-top flex">
-            <i className="fa-solid fa-chevron-up"></i>
-          </a>
-      
+        <a
+          style={{ opacity: showBtnScroll ? 1 : 0 }}
+          href="#up"
+          className="btn-scroll-top flex"
+        >
+          <i className="fa-solid fa-chevron-up"></i>
+        </a>
       </section>
     </>
   );

@@ -1,13 +1,12 @@
-import "./project.scss";
+import React ,{ useState } from "react";
 import data from "../../data/data.json";
 import Card from "./Card";
-import { useState } from "react";
+import "./project.scss";
 
 function Project() {
   const [classActive, setclassActive] = useState("all");
   const [dataFilter, setdataFilter] = useState(data);
-  
-  const  handleClick = (parms)=> {
+  const handleClick = (parms) => {
     setclassActive(parms);
     const newData = data.filter((item) => {
       const categorys = item.category.find((categor) => {
@@ -16,7 +15,7 @@ function Project() {
       return categorys === parms;
     });
     setdataFilter(newData);
-  }
+  };
 
   return (
     <section className="section-projects style flex" id="projects">

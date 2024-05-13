@@ -1,14 +1,11 @@
-import { useEffect, useState } from "react";
+import  react ,{ useEffect, useState } from "react";
 import "./header.scss";
 
 function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
-
   return (
     <header className="style flex" id="up">
-      <img className="logo" src="../src/images/icone.png">
-        
-      </img>
+      <img className="logo" src="./images/imagesSite/logo.png"></img>
       <nav>
         <div className="nav-desktop">
           <ul className="flex">
@@ -30,7 +27,6 @@ function Header() {
           </ul>
         </div>
       </nav>
-
       <div
         onClick={() => {
           setToggleMenu(true);
@@ -38,7 +34,6 @@ function Header() {
       >
         <i className="fa-solid fa-bars btn-menu"></i>
       </div>
-
       {toggleMenu && (
         <div className="nav-mobil">
           <ul className="modal">

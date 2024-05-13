@@ -60,6 +60,9 @@ table of contents
                 .message-confirm {
                     font-size: 1.2rem;
                 }
+                .lottie-ok{
+                    height: 40px;
+                }
                 
             }
             .info-form{
@@ -102,16 +105,14 @@ table of contents
 }
 
 /*======================== 
-4-responsive 767px
+4-responsive 998px
 =========================*/
 @media screen and (max-width: 998px) {
     .section-contact{
         margin-top: 0rem;
-        width: 98%;
         .form{
-            
-            width: 70%;
             .form-contact{
+                width: 100%;
                 .container-send{
                     .message-confirm {
                         font-size: 1rem;
@@ -144,7 +145,7 @@ table of contents
         flex-direction: column;
         .form{
             
-            width: 90%;
+            width: 100%;
         }
 
         .contact{

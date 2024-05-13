@@ -1,10 +1,9 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./card.scss";
 import Tag from "./Tag";
 
 function Card({ project }) {
   const [showModal, setShowModal] = useState(false);
-
   return (
     <>
       <figure className="card ">
@@ -16,11 +15,10 @@ function Card({ project }) {
           <h2 className="title-project">{project?.title}</h2>
           <div className="links-project">
             <div className="icon-link flex">
+              <p className="title-link"> {project?.titleLink}
+                </p>
               <a href={project?.link}>
-                <i className="fa-solid fa-link"></i>
-              </a>
-              <a href={project?.titleLink}>
-                <i className="fa-brands fa-github"></i>
+              <i className="fa-solid fa-link"></i>
               </a>
             </div>
             <button
@@ -31,14 +29,14 @@ function Card({ project }) {
             >
               Plus info <i className="fa-solid fa-arrow-right"></i>
             </button>
-            {/* <i className="fa-solid fa-circle-info"></i> */}
           </div>
         </figcaption>
       </figure>
       {showModal && (
         <div className={setShowModal ? "show-modal" : "no-show-modal"}>
           <div className="modal">
-            <button className="close-modal flex"
+            <button
+              className="close-modal flex"
               onClick={() => {
                 setShowModal(false);
               }}

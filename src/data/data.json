@@ -4,7 +4,7 @@
         "title" : "Booki",
         "category" : ["formation","all"],
         "description" : " Développer un site Internet de l’entreprise Booki qui permette aux usagers de trouver des hébergements et des     activités dans la ville de leur choix. Intégrer du contenu conformément à une maquette avec HTML et CSS, implémenter une interface responsive, installer un environnement de développement front-end.",
-        "picture" : "images/booki.webp",
+        "picture" : "images/imagesProjects/booki.webp",
         "tags": [
                     "HTML 5 -", 
                     "CSS 3 - ",
@@ -18,7 +18,7 @@
         "title" : "Sohie Bluel",
         "category" : ["formation","all"],
         "description" : "Créez une page web dynamique avec JavaScript. Manipuler les éléments du DOM, récupérer les données utilisateurs via des formulaires et gérer ses événements avec JavaScript ",
-        "picture" : "images/sophie.webp",
+        "picture" : "images/imagesProjects/sophie.webp",
         "tags" : [
                     "Javascript -",
                     "CSS -",
@@ -38,7 +38,7 @@
                     "Wave -",
                     "SEO"
                 ],
-        "picture" : "images/nina.webp",
+        "picture" : "images/imagesProjects/nina.webp",
         "titleLink":"Voir le site",
         "link" : "https://hadhoudda.github.io/site-photographe-Nina/"
     },
@@ -47,7 +47,7 @@
         "title" : "Kasa",
         "category" : ["formation","all"],
         "description" : "Créez une application web de location immobilière avec React en suivant les maquettes Figma (responsives ). Configurer la navigation entre les pages de l'application avec React Router, développer des éléments de l'interface d'un site web grâce à des composants React. Mettre en œuvre des animations CSS",
-        "picture" : "images/kasa.webp",
+        "picture" : "images/imagesProjects/kasa.webp",
         "tags" : [
                     "React -",
                     "React router -" ,
@@ -61,7 +61,7 @@
         "title" : "Mon Vieux Grimoir",
         "category" : ["formation","all"],
         "description" : "Développer le backend d'un site de notation de livres. Implémenter l'inscription et la connexion utilisateur, stocker des données de manière sécurisée au base de données, mettre en œuvre des opérations CRUD de manière sécurisée et l'optimisation des images. ",
-        "picture" : "images/grimoir.webp",
+        "picture" : "images/imagesProjects/grimoir.webp",
         "tags" : [
                     "Node.js -",
                     "Express.js -",
@@ -76,15 +76,15 @@
         "title" : "Mon Portfolio 2023",
         "category" : ["all","personel"],
         "description" : "Créer et publier en ligne mon portfolio de développeuse web. Ancienne version de mon portfolio.",
-        "picture" : "images/portfolio.webp",
+        "picture" : "images/imagesProjects/portfolio.webp",
         "tags": [
                     "HTML -", 
                     "CSS -",
                     "React -",
                     "React router"
                 ],
-        "titleLink" : "Voir le code",
-        "link" : "https://github.com/hadhoudda/Portfolio.git"
+        "titleLink" : "Voir le site",
+        "link" : "https://hadhoudda.github.io/Portfolio"
     }
 
 ]

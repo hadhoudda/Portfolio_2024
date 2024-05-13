@@ -1,23 +1,24 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Lottie from "lottie-react";
-import "./contact.scss";
 import DonaAnimation from "../../../public/animations/done.json";
 import Contactanimation from "../../../public/animations/contact.json";
+import "./contact.scss";
 
 function Contact() {
   const form = useRef();
   const [isAlert, setAlert] = useState(false);
   const handleAlert = () => {
-    const name = document.getElementById('name') as HTMLInputElement | null;
-    const email = document.getElementById('email') as HTMLInputElement | null;
-    const message = document.getElementById('message') as HTMLInputElement | null;
-    if ((name.value !== "") && (email.value !== "") && (message.value !== "")) {
-
-    setAlert(true);
-    setTimeout(() => {
-      setAlert(false);
-    }, 4000);
+    const name = document.getElementById("name") as HTMLInputElement | null;
+    const email = document.getElementById("email") as HTMLInputElement | null;
+    const message = document.getElementById(
+      "message"
+    ) as HTMLInputElement | null;
+    if (name.value !== "" && email.value !== "" && message.value !== "") {
+      setAlert(true);
+      setTimeout(() => {
+        setAlert(false);
+      }, 4000);
     }
   };
 
@@ -48,7 +49,6 @@ function Contact() {
         <p className="text-contat">
           N'hésitez pas à me contacter, je vous répondrai dans 24h.
         </p>
-
         <form ref={form} onSubmit={sendEmail} className="form-contact flex">
           <input
             type="text"
@@ -57,7 +57,6 @@ function Contact() {
             name="user_name"
             required
           />
-
           <input
             autoComplete="off"
             type="email"
@@ -66,36 +65,30 @@ function Contact() {
             name="email"
             required
           />
-         <textarea
+          <textarea
             name="message"
             placeholder="Votre message*"
             id="message"
             required
           />
-
           <div className="container-send">
-          {isAlert && 
+            {isAlert && (
               <p className="message-confirm flex">
                 Message bien envoyé
                 <Lottie
-                  loop={false}
-                  style={{ height: 40 }}
+                  className="lottie-ok"
+                  loop={true}
                   animationData={DonaAnimation}
                 />
               </p>
-            }
-            <button
-              onClick={handleAlert}
-              type="submit"
-              className="btn-contact"
-            >
+            )}
+            <button onClick={handleAlert} type="submit" className="btn-contact">
               Envoyer
             </button>
           </div>
           <p className="info-form">* Champ obligatoire</p>
         </form>
       </div>
-
       <div className="contact flex">
         <a href="tel:+33622464454">
           <i className="fa-solid fa-phone"> </i>: 0622464454
