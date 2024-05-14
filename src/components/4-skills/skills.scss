@@ -42,13 +42,17 @@ table of contents
 =========================*/
 @media screen and (max-width: 767px) {
   .section-skills {
+    padding: 0 1rem;
     .skills-technos,
     .skills-outils {
       gap: 2rem;
       .skill {
         gap: 0.8rem;
+        i {
+          font-size: 2rem;
+        }
         .text-skill {
-          font-size: 1rem;
+          font-size: 0.9rem;
         }
       }
     }

@@ -5,7 +5,7 @@ function Header() {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
     <header className="style flex" id="up">
-      <img className="logo" src="./images/imagesSite/logo.png"></img>
+      <img className="logo" src="./images/imagesSite/logo.png" alt="logo de portfolio houda"></img>
       <nav>
         <div className="nav-desktop">
           <ul className="flex">

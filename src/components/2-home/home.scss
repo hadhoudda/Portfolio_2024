@@ -39,7 +39,7 @@ table of contents
 =========================*/
     .link-social {
       gap: 1.5rem;
-      margin: 4rem 2rem 2rem 0;
+      margin: 4rem 0 2rem 0;
       justify-content: center;
       i {
         color: mixins-variables.$primary--link--social--color;
@@ -116,13 +116,13 @@ table of contents
       h1,
       h2 {
         font-size: 2rem;
-        margin-bottom: 1.3rem;
+        padding: 0 1rem;
         .my-name {
           font-size: 3rem;
         }
       }
       .btn-cv {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         a {
           font-size: 0.6rem;
           font-weight: 400;
