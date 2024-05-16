@@ -72,12 +72,12 @@ figure {
       .icon-link {
         gap: 0.5rem;
         .title-link {
-          color: darken(mixins-variables.$primary--title--color, 30%);
+          color: mixins-variables.$primary--link--social--color;
           font-size: 0.8rem;
         }
 
         a {
-          color: darken(mixins-variables.$primary--title--color, 30%);
+          color: mixins-variables.$primary--link--social--color;
           &:hover {
             color: lighten(mixins-variables.$primary--title--color, 70%);
             transition: 0.3s;
@@ -193,12 +193,12 @@ figure {
 @media screen and (max-width: 767px) {
   figure {
     width: 88%;
-    height: 220px;
+    height: 240px;
     figcaption {
       .title-project {
         font-size: 1.2rem;
-        font-weight: 700;
-        margin-bottom: 1.2rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
       }
     }
   }
@@ -206,8 +206,11 @@ figure {
     .modal {
       height: 350px;
       .description-project {
+        .title-modal {
+          font-size: 1.2rem;
+        }
         .body-modal {
-          font-size: 0.9rem;
+          font-size: 0.8rem;
         }
       }
     }
@@ -222,7 +225,7 @@ figure {
     .modal {
       .description-project {
         .body-modal {
-          line-height: 1.5em;
+          line-height: 1.3em;
         }
       }
     }
